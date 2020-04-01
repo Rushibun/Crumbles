@@ -38,4 +38,5 @@ y = y + vsp;
 
 // flipping sprite
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0) image_xscale = sign(hsp) * size;
+image_yscale = size;
