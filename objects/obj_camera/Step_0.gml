@@ -25,3 +25,7 @@ if (layer_exists("trees"))
 {
 	layer_x("trees",x/4);
 }
+if (layer_exists("clouds"))
+{
+	layer_x("clouds",x/2);
+}

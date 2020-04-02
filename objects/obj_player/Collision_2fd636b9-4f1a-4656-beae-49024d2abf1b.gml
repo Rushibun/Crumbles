@@ -11,4 +11,5 @@ if(vsp > 0)
 			instance_destroy();
 		}
 	}
+image_blend = make_color_rgb(55, 240, 240);
 }

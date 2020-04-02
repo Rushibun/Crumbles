@@ -5,6 +5,6 @@ with (obj_player)
 	if (hascontrol)
 	{
 		hascontrol = false;
-		slidetrans(TRANS_MODE.NEXT,room2);
+		slidetrans(TRANS_MODE.NEXT);
 	}
 }
