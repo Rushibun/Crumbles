@@ -23,6 +23,7 @@ if (menu_control)
 		menu_x_target = gui_width + 200;
 		menu_committed = menu_cursor;
 		menu_control = false;
+		audio_play_sound(snd_select,2,false);
 	}
 }
 if (menu_x > gui_width + 150) && (menu_committed != -1)

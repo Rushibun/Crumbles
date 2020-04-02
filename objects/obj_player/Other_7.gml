@@ -1,0 +1,3 @@
+/// @desc footsteps....
+
+if (sprite_index == spr_playerR) audio_play_sound(choose(snd_foot1,snd_foot2),1,false);

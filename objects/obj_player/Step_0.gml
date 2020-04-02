@@ -22,6 +22,7 @@ vsp = vsp + grv;
 if (place_meeting(x,y+1,obj_wall)) and (key_jump)
 {
 	vsp = -7;
+	audio_play_sound(snd_jump,5,false);
 }
 
 if (place_meeting(x + hsp, y, obj_wall))
@@ -57,6 +58,11 @@ if (!place_meeting(x,y+1,obj_wall))
 }
 else
 {
+	if (sprite_index == spr_playerA)
+	{
+		audio_sound_pitch(snd_landing,choose(0.8,1.0,1.2));
+		audio_play_sound(snd_landing,4,false);
+	}
 	image_speed = 1;
 	if (hsp == 0)
 	{
